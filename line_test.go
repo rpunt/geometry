@@ -77,3 +77,33 @@ func TestSlope(t *testing.T) {
 		t.Errorf("got %v\n", got)
 	}
 }
+
+// func TestFillInPoints(t *testing.T) {
+// 	// horizontal
+// 	l1 := Line {
+// 		Point {0,0},
+// 		Point {3,0},
+// 	}
+// 	l1_expected := [4]Point{{0,0},{1,0},{2,0},{3,0}}
+// 	if l1_got := l1.FillInPoints(); reflect.DeepEqual(l1_got, l1_expected) == false {
+// 		t.Errorf("got %v, expected %v\n", l1_got, l1_expected)
+// 	}
+// 	// vertical
+// 	l2 := Line {
+// 		Point {0,0},
+// 		Point {0,3},
+// 	}
+// 	l2_expected := [4]Point{{0,0},{0,1},{0,2},{0,3}}
+// 	if l2_got := l2.FillInPoints(); reflect.DeepEqual(l2_got, l2_expected) == false {
+// 		t.Errorf("got %v, expected %v\n", l2_got, l2_expected)
+// 	}
+// 	// neither
+// 	l3 := Line {
+// 		Point {0,0},
+// 		Point {3,3},
+// 	}
+// 	l3_expected := [4]Point{{0,0},{1,1},{2,2},{3,3}}
+// 	if l3_got := l3.FillInPoints(); reflect.DeepEqual(l3_got, l3_expected) == false {
+// 		t.Errorf("got %v, expected %v\n", l3_got, l3_expected)
+// 	}
+// }
